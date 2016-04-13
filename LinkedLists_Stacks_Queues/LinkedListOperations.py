@@ -51,7 +51,7 @@ class LinkedList:
                prev = curr
                curr = curr.Next
 
-         else:
+          else:
               prev.Next = curr.Next
               curr.Next = None
               return
@@ -60,4 +60,10 @@ class LinkedList:
 
 
 lkd_lst = LinkedList()
-lkd_lst.add(
+lkd_lst.add(10)
+lkd_lst.add(23)
+lkd_lst.printelements()
+lkd_lst.delete(23)
+lkd_lst.printelements()
+print lkd_lst.find(10)
+
